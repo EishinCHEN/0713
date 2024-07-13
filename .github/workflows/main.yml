@@ -1,0 +1,12 @@
+name: Run My Pyhton
+on:
+    push:
+jobs:
+    build:
+        name: do job1
+        runs-on: ubuntu-latest
+        steps:
+        - uses: action/checkout@v2
+        - name: Run test.py
+          run: |
+            python3 test.py
